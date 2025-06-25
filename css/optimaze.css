@@ -1,0 +1,335 @@
+html {
+  scroll-behavior: smooth;
+} 
+  
+  .hero {
+      background: linear-gradient(120deg, #ff9966 0%, #ff845e 100%);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+  }
+
+  .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+  }
+
+  .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+  }
+
+  .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      opacity: 0.9;
+  }
+
+  .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+      margin: 0 10px;
+  }
+
+  .btn-primary {
+      background-color: var(--accent);
+      color: white;
+  }
+
+  .btn-outline {
+      border: 2px solid white;
+      color: white;
+  }
+
+  .btn-primary:hover {
+      background-color: #16a085;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-outline:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: translateY(-3px);
+  }
+
+  /* Stats */
+  .stats {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+      flex-wrap: wrap;
+  }
+
+  .stat-box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 25px;
+      margin: 0 15px;
+      min-width: 200px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+  }
+
+  .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+  }
+
+  /* Features Section */
+  .section {
+      padding: 100px 0;
+  }
+
+  .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+  }
+
+  .section-header h2 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+  }
+
+  .section-header p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #7f8c8d;
+      font-size: 1.1rem;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 0 10px;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1.5px 4px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 24px 28px 24px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-height: 370px;
+    position: relative;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(255,132,94,0.15), 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff9966 0%, #ff845e 100%);
+    color: #fff;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 8px rgba(255,132,94,0.15);
+}
+
+.feature-content {
+    text-align: center;
+}
+
+.feature-content h3 {
+    font-size: 1.3rem;
+    color: #1976d2;
+    margin-bottom: 12px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.feature-content p {
+    color: #757575;
+    font-size: 1.03rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+    .features {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+    .feature-card {
+        min-height: 340px;
+        padding: 28px 14px 22px 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .features {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 2px;
+    }
+    .feature-card {
+        min-height: 0;
+        padding: 20px 8px 16px 8px;
+    }
+    .feature-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 1.6rem;
+        margin-bottom: 18px;
+    }
+    .feature-content h3 {
+        font-size: 1.1rem;
+    }
+    .feature-content p {
+        font-size: 0.95rem;
+    }
+}
+
+  /* Footer */
+ 
+  .social-links {
+      display: flex;
+      margin-top: 20px;
+  }
+
+  .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      margin-right: 10px;
+      color: white;
+      transition: all 0.3s;
+  }
+
+  .social-links a:hover {
+      background-color: var(--accent);
+      transform: translateY(-3px);
+  }
+
+  .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: #bdc3c7;
+      font-size: 0.9rem;
+  }
+
+  /* Responsive */
+  /* Responsive Hero Section */
+  @media (max-width: 992px) {
+      .hero {
+          padding: 60px 0;
+      }
+
+      .hero h1 {
+          font-size: 2.2rem;
+      }
+
+      .hero-content {
+          padding: 0 10px;
+      }
+  }
+
+  /* Stats Section */
+  @media (max-width: 768px) {
+      .stats {
+          flex-direction: column;
+          align-items: center;
+          margin-top: 40px;
+      }
+
+      .stat-box {
+          margin: 10px 0;
+          min-width: 0;
+          width: 90%;
+          max-width: 350px;
+      }
+
+      .stat-number {
+          font-size: 2rem;
+      }
+  }
+
+  /* Features Grid */
+  @media (max-width: 992px) {
+      .features {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+      }
+  }
+
+  @media (max-width: 600px) {
+      .features {
+          grid-template-columns: 1fr;
+          gap: 15px;
+      }
+
+      .feature-card {
+          padding: 10px;
+      }
+
+      .feature-icon {
+          font-size: 2.5rem;
+          height: 120px;
+      }
+  }
+
+  /* Footer */
+  @media (max-width: 900px) {
+      .footer-content {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+      }
+  }
+
+  @media (max-width: 600px) {
+      .footer-content {
+          grid-template-columns: 1fr;
+          gap: 10px;
+      }
+
+      .footer-column {
+          margin-bottom: 20px;
+      }
+
+      .footer-column h3 {
+          font-size: 1.1rem;
+      }
+  }
+
+  /* Buttons and Text */
+  @media (max-width: 600px) {
+
+      .btn,
+      .btn-primary,
+      .btn-outline {
+          padding: 10px 18px;
+          font-size: 1rem;
+          margin: 5px 0;
+      }
+
+      .hero p {
+          font-size: 1rem;
+      }
+  }
+
+  .section#features {
+    background: #fff7f3;
+}
