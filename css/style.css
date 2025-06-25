@@ -14660,3 +14660,7 @@ code {
   margin-right: 0;
   margin-left: 0;
 }
+
+.custom-scrollable {
+  overflow-y: scroll; /* Contradicts other overflow rules */
+}
