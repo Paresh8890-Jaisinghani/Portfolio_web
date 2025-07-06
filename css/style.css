@@ -14672,23 +14672,26 @@ code {
   overflow-y: scroll; /* Contradicts other overflow rules */
 }
 
-
-/* Prevent overlays and hero images from blocking scrolling/touch */
-.hero .overlay,
-.hero .img,
-.hero .one-third.js-fullheight.img {
+/* Fix: Allow scrolling/touch events to pass through hero overlays and hero image */
+.hero .slider-item .overlay,
+.hero .slider-item .img,
+.hero .slider-item .one-third.img,
+.hero .slider-item .one-third.js-fullheight.img {
   pointer-events: none !important;
 }
-.hero .img .btn,
-.hero .img a {
-  pointer-events: auto;
+
+.hero .slider-item .one-forth,
+.hero .slider-item .text,
+.hero .slider-item .btn,
+.hero .slider-item a {
+  pointer-events: auto !important;
 }
-/* Fix for hero section scroll blocking on mobile */
-.hero .one-third.img,
-.hero .one-third.js-fullheight.img,
-.hero .slider-item .img,
+
+
+/* Fix mobile scroll: let touch events pass through hero overlays and images */
 .hero .slider-item .overlay,
-.hero .slider-item > .overlay {
+.hero .slider-item .img,
+.hero .one-third.js-fullheight.img {
   pointer-events: none !important;
 }
 
