@@ -14750,3 +14750,78 @@ code {
   background: #fff;
   color: #222;
 }
+.hero-debug {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #222;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-debug-slider,
+.hero-debug-slide {
+  min-height: 100vh;
+}
+
+.hero-debug-slide {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.hero-debug-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.hero-debug-image-col {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 2;
+  flex: 0 0 40%;
+}
+
+.hero-debug-img-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.hero-debug-content-col {
+  z-index: 3;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex: 1 1 60%;
+  background: none;
+}
+
+.hero-debug-text {
+  color: #fff;
+  max-width: 500px;
+}
+
+.hero-debug-subheading {
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffc107;
+}
+
+.btn-white.btn-outline-white {
+  color: #fff;
+  border-color: #fff;
+  background: transparent;
+}
+.btn-white.btn-outline-white:hover {
+  background: #fff;
+  color: #222;
+}
