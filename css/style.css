@@ -14683,3 +14683,18 @@ code {
 .hero .img a {
   pointer-events: auto;
 }
+/* Fix for hero section scroll blocking on mobile */
+.hero .one-third.img,
+.hero .one-third.js-fullheight.img,
+.hero .slider-item .img,
+.hero .slider-item .overlay,
+.hero .slider-item > .overlay {
+  pointer-events: none !important;
+}
+
+.hero .slider-item .one-forth,
+.hero .slider-item .text,
+.hero .slider-item .btn,
+.hero .slider-item a {
+  pointer-events: auto !important;
+}
