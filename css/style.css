@@ -14687,17 +14687,66 @@ code {
   pointer-events: auto !important;
 }
 
-
-/* Fix mobile scroll: let touch events pass through hero overlays and images */
-.hero .slider-item .overlay,
-.hero .slider-item .img,
-.hero .one-third.js-fullheight.img {
-  pointer-events: none !important;
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #222;
+  color: #fff;
+  overflow: hidden;
 }
 
-.hero .slider-item .one-forth,
-.hero .slider-item .text,
-.hero .slider-item .btn,
-.hero .slider-item a {
-  pointer-events: auto !important;
+.home-slider,
+.slider-item {
+  min-height: 100vh;
+}
+
+.slider-item {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.slider-item .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.one-third.img {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 2;
+}
+
+.one-third.img .overlay {
+  background: rgba(0,0,0,0.2);
+}
+
+.one-forth {
+  z-index: 3;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: #fff;
+  max-width: 500px;
+}
+
+.btn-white.btn-outline-white {
+  color: #fff;
+  border-color: #fff;
+  background: transparent;
+}
+
+.btn-white.btn-outline-white:hover {
+  background: #fff;
+  color: #222;
 }
