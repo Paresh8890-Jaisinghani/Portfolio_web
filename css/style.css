@@ -14671,3 +14671,15 @@ code {
 .custom-scrollable {
   overflow-y: scroll; /* Contradicts other overflow rules */
 }
+
+
+/* Prevent overlays and hero images from blocking scrolling/touch */
+.hero .overlay,
+.hero .img,
+.hero .one-third.js-fullheight.img {
+  pointer-events: none !important;
+}
+.hero .img .btn,
+.hero .img a {
+  pointer-events: auto;
+}
