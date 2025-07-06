@@ -12088,6 +12088,7 @@ h5,
   .hero h3.vr {
     opacity: 0;
     display: none;
+    
   }
 }
 
@@ -12234,8 +12235,10 @@ h5,
     right: 0;
     width: 1200px;
     margin: 0 auto;
+   
   }
 }
+
 
 @media (max-width: 991.98px) {
   .owl-carousel.home-slider .slider-item .slider-text .one-forth {
@@ -12247,6 +12250,9 @@ h5,
     bottom: 0;
     z-index: 1;
     padding: 1em;
+  }
+  .one-forth {
+    padding-bottom: 20%;
   }
 }
 
@@ -14527,12 +14533,13 @@ textarea.form-control {
   justify-content: center;
   align-items: stretch;
   margin: 60px auto;
-  max-width: 900px;
+  max-width: 100px;
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 0 8px 40px rgba(30, 60, 120, 0.10);
   background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(16px);
+  
 }
 
 .contact-form {
